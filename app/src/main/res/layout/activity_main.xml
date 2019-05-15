@@ -5,9 +5,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingTop="80dp"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ball3"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ask_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/answer"
+        android:layout_marginBottom="-130dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_text"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="#8BC34A"/>
+
 </RelativeLayout>
